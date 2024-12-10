@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #1d232c;
+
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1d232c ;
+}
+
+.navbar-menue-toggle{
+    display: none;
+}
+
+/*side nav bar*/
+.side-navbar{
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    /* display: none; */
+    transition: 1s;
+
+}
+
+.side-navbar-link{
+    margin-bottom:25px ;
+}
+
+.side-navbar-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-link a:hover{
+    text-decoration: underline;
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1d232c;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.service{
+    padding: 20px;
+
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.new-arrivals{
+    display: flex;
+    /* gap: 15px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.new-arrivals-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.shop-button{
+    background-color: #f6f8fa;
+    color: rgb(9, 0, 0);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: absolute;
+    top: 70%;
+    left: 35px;
+    border-radius: 10px;
+
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news input{
+    padding: 10px;
+    width: 80vw;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: solid black;
+}
+
+.news button{
+    background-color: #1d232c;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+.footer{
+    background-color: #1d232c;
+    margin-top: 20px;
+    padding: 40px;
+    color: white;
+}
+
+.product-section{
+    margin-top: 20px;
+
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline:none ;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img{
+    border-radius: 10px;
+}
+
+.contact{
+    margin: 25px;
+    padding: 10px;
+    justify-content: center;
+    border: #1d232c;
+    border-width: 2px;
+    border-style: solid;
+
+  
+  
+
+.table{
+    display: flex;
+    justify-content: center;
+
+}
+    
+}
+ .contact button{
+    background-color: #1d232c;
+    color: white;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    padding-right:20px ;
+    padding-left:20px ;
+    display: flex;
+    justify-items: center;
+    
+  
+ }
+/*media query*/
+
+@media screen and (max-width:700px){
+    .navbar-menue-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+
+
+
+}
+    
